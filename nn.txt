@@ -1,0 +1,73 @@
+Deep learning : 
+
+It is a subset of artificial intelligence through which we can train the 
+system to identify,understand and make accurate predictions
+
+We neural network model to acheive the objective of deep learning
+
+Neural network : It is an artificial system which works similarily to our human brain
+It has some set of ayers and in each layer we have some set of of neurons or we call them
+as nodes.
+And the layers are mainly classified into input layer,hidden layer and output layer.
+
+Input layer :
+
+As the name suggests, it accepts inputs in several 
+different formats provided by the programmer.
+
+Hidden Layer:
+
+The hidden layer presents in-between input and output layers. 
+It performs all the calculations to find recognize features and patterns.
+
+Output Layer:
+
+The result is obtained through output layer it may contain one or more neurons
+
+Working :
+
+Each neuron in the hidden layer will be get assigned by some value that ranges from 0 to 1 throgh activation function
+what this activation function does is it multipes the input value which comes from input layer
+with some weight and adds some value called bias and this calculated value is returned through our activation 
+which makes some neurons to fire i mean they get activated so in the hidden layer only some neurons gets activated 
+and this continues till we reach the output finally it comes to output only one neuron is fired or may 1 or more in some cases 
+and that neuron gives us that prediction 
+
+I can explain you with an example 
+
+
+suppose we want to build hand written recognition system which can able to predict the digits that are hand written
+
+whenevr we pass an image which consistes of number that is handwritten it should predict the number is 8.
+
+so what we wanna do is each image is in 24*24 pixel format so we have a total 576 pixels so the 
+input layer consists of 576 neurons and each neural hold 1 pixel and the value of that pixel will be some 
+grayscale value that is 1 if it is pure white 0 if the pixel is of pure black and 0.5 if the pixel is of gray.
+
+
+This is the job of input layer. now these values are passed as parametrs to the net layer that to hidden llayer
+these parametrs are taken by functions acalled as activation function and return a value that may range between 0 to 1
+0 mean the neuron did not fire 1 means the neuron fired. So when we talk generally what is task of this activation function is 
+to identify some patterns like say 0 may be in oval and 1 has a single line and 8 has two oops and 5 may contains a half open 
+loop and single line on head like this the each neuron in the hidden layer gets activated or gets fired it found certain pattern 
+in hidden layer there 3 neurons which are activated when they we pass the number 4 that means 1 neuron identyfing the stright line shape
+and other neuron identifying the L shaped line so again the activation function is calculated on out[ut layer and finally only neuron fires in
+the last layer and since the numbers ranges from 0 to 9 . we have 10 neurons so each neuroon indicated some number and neuron which imlies 4 gets fired
+and thats our answer.
+
+How the neurons are trained to recognize the patterns?
+
+First we train them by feeding them with input as well as output data . we assign some random values of those
+weights and bias. They predict the output and of course since we are passing  some random values of weights and bias 
+we get wrong op . so we say that this is wrong and make the algorithm to back paropagate from op to ip layer
+and we try to adust these weights and bias and make prdiction if we get wrong op we again back propagate and 
+adjust the weights and biases once more. thus we keep on adjusting these wts and bs untill we see that the systems is 
+predicting correct op.
+now we test by some unknown ip data it predicts correctly.
+
+
+
+
+  
+ 
+

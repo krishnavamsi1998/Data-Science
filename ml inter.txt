@@ -1,0 +1,265 @@
+What is machine learning ?
+
+It is a process of making the machines to
+learn themselves from the past data so that
+they can make right decisions or predictions
+
+examples:
+ 
+house price predictions
+weather prediction
+car price prediction
+object prediction
+Cancer prediction
+diabetes prediction
+
+Applications :
+
+Recommendations 
+
+Netflix , amazon , youtube , ecommerce
+
+Predictions
+
+google maps , uber eta
+
+(estimated time of arrival)
+
+health :
+
+cancer prediction etc
+
+social media :
+
+Recognition : face recognition,facebook etc
+
+ai : self driving cars tesla
+
+LINEAR REGRESSION ANALYSIS:
+
+It is a technique which helps in establishing the
+relation between dependent and independent 
+varaibles.used when the output that we need 
+to get is a continous value
+
+Exampls of linear regression :
+
+house price predictions , car price predictions
+mobile price predictions , cricket score prediction
+
+Equation : y=mx+c
+
+Process : In order to establish the relation
+we visualize the process by plotting the data
+points that is x varaiable values in a graph 
+and we try fit a line in between those points
+and we find error by taking the sum of differe
+nce between those points to our line 
+and we minimize the error by adjjusting the line 
+in between those data points and select the
+line which is a best fit to data points
+
+
+How to minimize the error ?
+
+Gradient decent is one of the algorithms we
+use for minimizing the error.we need to
+ find the parameters of the line such that it
+ makes the best fit.we initaially takes some 
+random parameters we keep on changing the values 
+these parameters in order to minimize the error 
+.When we plot a graph of mse or cost function
+and these parameters ,we get a curve
+we need to find global minimum of that curve
+and fix the parameters when we reach global minima.
+
+
+Logistic regression
+
+It is a clssification algorithm
+used for finding probability
+of occuring an event. used when output 
+that we need to predict is discrete or 
+categorical.
+
+we used sigmoid function in order to 
+make sure that our output varaiable is 0 or 1
+
+Examples :
+Rain
+cancer
+product buy or not
+insurance
+
+
+Decision Tree : It is also one classification
+alogorithms which used to make prediction the
+chnace of occuring an event
+based on parameters.
+
+Example : weather prediction(rain)
+whther an employee is promoted or not
+whether a perosn plays pubg or not
+
+working :
+
+It filters bsed on parameters lets take wen need
+predict whether a person plays pubg or not 
+so first we check there age and and in the age
+we in the age we again check whether it is male
+or female since this forms tree data structure
+we call it as decision we takea take a decision
+at each and evrery level of tree
+
+entrpoy : measure of randomness
+information : measure of entropy
+gini impurity : measure of impurity
+
+Random forest : Random forset is an advanced
+version of decision tree It is similary to the working
+of decision tree . It consistes of multiple
+decison tress applied when dataset is complex
+
+Ex : Objects detections
+
+supervised
+
+if we give the iput data as well as the output data 
+as a part of training data then it is supervised learning
+
+Use case
+
+speech recognition
+finger print recognition
+
+unsupervised learning
+
+if we give only input data as a part of training 
+data then it is called unsupervised learning
+
+Reinforcement learning
+
+learns through feedback
+
+ex : SARSA
+
+use case
+
+dynamic pricing in retail sector
+
+Artificial Intelligence
+
+AI is a technique which enables machines to mimic 
+human behaviour
+
+Algorithms in machine learning:
+
+1.Classification algorithms
+2.Anomoly detection algorithms
+3.clustering algorithms
+4.Regeression algorithms
+
+1.Classification algorithms
+
+examples :
+Carbeakown , Rainfall ,Churn 
+
+a.Logistic Regression
+
+Diabetes prediction
+
+b.Decision tree
+
+It is a tree structure where each branch 
+takes a decision .
+
+loan repayment
+
+c.Random forest
+
+constructs multiple decision trees
+
+Iris dataset.
+Digit recognition.
+Advantages:
+
+1.high accuracy.
+2.Training time is less.
+
+d.Naive bayes 
+
+based on bayes theorem
+
+bayes thorem is conditional probability.
+
+example :
+
+Customer buys a product or not ?
+
+parameters :
+
+day , discount , free delivary
+
+recall is the ratio of the number of events you can 
+correctly recall, to the total number of events.
+
+precision is the ratio of a number of events you can correctly recall, 
+to the total number of events you can recall
+
+Let’s consider a scenario of a fire emergency:
+
+True Positive: If the alarm goes on in case of a fire.
+Fire is positive and prediction made by the system is true.
+False Positive: If the alarm goes on, and there is no fire.
+System predicted fire to be positive which is a wrong prediction, hence the prediction is false.
+False Negative: If the alarm does not ring but there was a fire.
+System predicted fire to be negative which was false since there was fire.
+True Negative: If the alarm does not ring and there was no fire.
+The fire is negative and this prediction was true.
+
+CONFUSION MATRIX :
+
+IT IS A SIMPLE MATRIX WHICH IS USED
+TO ANALYZE THE PERFORMACE OF A
+MACHINE LEARNING MODEL
+
+IT IS JUST LIKE A PROGRESS REPORT OF
+YOUR MODEL
+
+It consists of true postives ,false postive,
+true negative, flase negative
+
+
+Like if the output that we need to predict is
+of 'yes' or 'no' type , it gives how many no.of
+times your model predicted correctly, how many
+how many no.of times ur model predicted wrogly
+
+What is the difference between inductive and 
+deductive learning?
+Inductive learning is the process of
+ using observations to draw conclusions 
+Deductive learning is the process of using
+ conclusions to form observations 
+
+How is KNN different from K-means clustering?
+KNN : supervised , classification
+
+kmeans : unsupervised , clustering
+
+
+How to deal with null values ?
+
+1.You can delete them using dropna function 
+
+2.Replace those null values with mean/median
+
+example : data["Age"] = data["Age"].replace(np.NaN, data["Age"].mean())
+
+
+
+
+
+
+
+
